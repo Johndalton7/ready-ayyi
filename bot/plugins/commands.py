@@ -55,11 +55,11 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9')
+                    InlineKeyboardButton('🎖ᏚᎻᎪᎡᎬ 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
                 ],
                 [
-                    InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9'),
-                    InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9')
+                    InlineKeyboardButton('GRΟυP 💬', url='https://t.me/MGMOVIEGRAM'),
+                    InlineKeyboardButton('📣 ζHΔППΣL', url='https://t.me/MG_MEDIA')
                 ]
             ]
         )
