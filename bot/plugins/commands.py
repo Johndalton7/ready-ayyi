@@ -73,16 +73,17 @@ async def start(bot, update):
                 caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    '⚠️ 𝗝𝗢𝗜𝗡 𝗢𝗨𝗥 𝗖𝗛𝗔𝗡𝗡𝗘𝗟 ⚠️', url="https://t.me/joinchat/5UxSr0XIphVhYjc9"
-                                )
-                        ]
-                    ]
-                )
-            )
+            [
+                [
+                    InlineKeyboardButton('🎖ᏚᎻᎪᎡᎬ 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
+                ],
+                [
+                    InlineKeyboardButton('GRΟυP 💬', url='https://t.me/MGMOVIEGRAM'),
+                    InlineKeyboardButton('📣 ζHΔППΣL', url='https://t.me/MG_MEDIA')
+                ]
+            ]
+        )
+    )
             
         elif file_type == "audio":
         
