@@ -54,15 +54,15 @@ async def start(bot, update):
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
             [
-                [
-                    InlineKeyboardButton('🎖 ᏚᎻᎪᎡᎬ  🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
-                ],
-                [
-                    InlineKeyboardButton('💬GRΟυP', url='https://t.me/MGMOVIEGRAM'),
-                    InlineKeyboardButton('📣ζHΔППΣL', url='https://t.me/MG_MEDIA')
-                ]
-            ]
-        )
+                        [
+                            InlineKeyboardButton
+                                (
+                                    'Developers', url="https://t.me/CrazyBotsz"
+                                )
+                        ]
+                    ]
+                )
+            )
 
         elif file_type == "video":
         
