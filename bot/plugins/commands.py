@@ -54,15 +54,16 @@ async def start(bot, update):
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
             [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    'Developers', url="https://t.me/CrazyBotsz"
-                                )
-                        ]
-                    ]
-                )
-            )
+                [
+                    InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9')
+                ],
+                [
+                    InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9'),
+                    InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9')
+                ]
+            ]
+        )
+    )
 
         elif file_type == "video":
         
