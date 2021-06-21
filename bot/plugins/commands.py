@@ -110,7 +110,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️ JOIN', url='https://t.me/joinchat/5UxSr0XIphVhYjc9'),
+        InlineKeyboardButton('⚠️ JOIN', url='https://t.me/MG_MEDIA'),
         InlineKeyboardButton('🕵‍♂ CREATOR', url ='https://t.me/Wafikh')
     ],[
         InlineKeyboardButton('💡 HELP', callback_data="help"),
@@ -121,7 +121,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/0d8259f773c2639ad64dd.jpg",
+        photo="https://telegra.ph/file/8f2307b019539da61b3dc.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
