@@ -138,14 +138,14 @@ async def auto_filter(bot, update):
             [
                 [
                     InlineKeyboardButton(
-                        "Search In Google", url=f"https://Google.com" # URL
+                        "Search In Google", url=f"https://Google.com/{query}" # URL
                     )
                 ]
             ]
         ),
             reply_to_message_id=update.message_id
         )
-        await asyncio.sleep(5)
+        await asyncio.sleep(8)
         await Send_message.delete()
     
 
