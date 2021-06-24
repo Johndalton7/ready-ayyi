@@ -49,7 +49,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = "<b>┈••✿ @MGMOVIEGRAM ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/joinchat/nppwyzxMr8NhN2M9\n\n➠𝐂ʜᴀɴɴᴇʟ : https://t.me/joinchat/5UxSr0XIphVhYjc9</b>",
+                caption = "<b>┈••✿ @MGMOVIEGRAM ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/joinchat/nppwyzxMr8NhN2M9\n\n➠Gʀᴏᴜᴘ : https://t.me/MGMOVIEGRAM</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
