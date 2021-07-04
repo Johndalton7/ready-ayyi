@@ -231,7 +231,7 @@ async def auto_filter(bot, update):
                 reply_to_message_id=update.message_id
             )
 
-           await asyncio.sleep(5)
+           await asyncio.sleep(300)
            await wafikh.delete()
 
            
