@@ -142,16 +142,16 @@ async def cb_navg(bot, update: CallbackQuery):
     
     reply_markup = InlineKeyboardMarkup(temp_results)
     
-    text=f"<b>𝐆𝐫𝐨𝐮𝐩:- <b>@MGMOVIEGRAM</b> \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞:- {query} \n𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝:- {len_results} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:- {update.from_user.mention} \n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲 \n\nപടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇</b>"
+    text=f"<b>👇ʜᴇʀᴇ ᴛʜᴇ ʀᴇsᴜʟᴛs ᴏғ ʏᴏᴜʀ ǫᴜᴇʀʏ </b>"
         
     try:
-        wafikh = await update.message.edit(
+        text = await update.message.edit(
                 text,
                 reply_markup=reply_markup,
                 parse_mode="html"
         )
         await asyncio.sleep(300)
-        await wafikh.delete()
+        await text.delete()
         
     except FloodWait as f: # Flood Wait Caused By Spamming Next/Back Buttons
         await asyncio.sleep(f.x)
