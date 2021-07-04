@@ -150,6 +150,8 @@ async def cb_navg(bot, update: CallbackQuery):
                 reply_markup=reply_markup,
                 parse_mode="html"
         )
+        await asyncio.sleep(300)
+        await wafikh.delete()
         
     except FloodWait as f: # Flood Wait Caused By Spamming Next/Back Buttons
         await asyncio.sleep(f.x)
