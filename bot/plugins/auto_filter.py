@@ -129,6 +129,7 @@ async def auto_filter(bot, update):
             InlineKeyboardButton("📂 " + file_names, url=file_link),
             InlineKeyboardButton(f_size, url=file_link)
         ])
+            
         
     else:
         Send_message = await bot.send_message(
@@ -145,7 +146,7 @@ async def auto_filter(bot, update):
         ),
             reply_to_message_id=update.message_id
         )
-        asyncio sleep(300)
+        asyncio sleep(10)
         await Send_message.delete()
     
 
@@ -221,7 +222,7 @@ async def auto_filter(bot, update):
         reply_markup = InlineKeyboardMarkup(result[0])
 
         try:
-            await bot.send_photo(
+           wafikh = await bot.send_photo(
                 chat_id=update.chat.id,
                 photo="https://telegra.ph/file/e36894e1df6429dac7006.jpg",
                 caption=f"<b>𝐆𝐫𝐨𝐮𝐩:- <b>@MGMOVIEGRAM</b> \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐌𝐨𝐯𝐢𝐞:- {query} \n𝐑𝐞𝐬𝐮𝐥𝐭𝐬 𝐅𝐨𝐮𝐧𝐝:- {(len_results)} \n𝐑𝐞𝐪𝐮𝐞𝐬𝐭𝐞𝐝 𝐁𝐲:- {update.from_user.mention} \n\n𝗣𝗿𝗲𝘀𝘀 𝗧𝗵𝗲 𝗗𝗼𝘄𝗻 𝗕𝘂𝘁𝘁𝗼𝗻𝘀 𝗧𝗼 𝗔𝗰𝗰𝗲𝘀𝘀 𝗧𝗵𝗲 𝗙𝗶𝗹𝗲 \n\nപടം ലഭിക്കുന്നതിനായി താഴെ കാണുന്ന ബട്ടണുകളിൽ ക്ലിക്ക് ചെയ്യുക👇</b>",
@@ -229,12 +230,16 @@ async def auto_filter(bot, update):
                 parse_mode="html",
                 reply_to_message_id=update.message_id
             )
-
+           asyncio sleep(300)
+           await wafikh.delete()
+           
         except ButtonDataInvalid:
             print(result[0])
         
         except Exception as e:
             print(e)
+
+          
 
 
 async def gen_invite_links(db, group_id, bot, update):
