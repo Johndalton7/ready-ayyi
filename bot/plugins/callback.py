@@ -145,13 +145,11 @@ async def cb_navg(bot, update: CallbackQuery):
     text=f"<b>👇ʜᴇʀᴇ ᴛʜᴇ ʀᴇsᴜʟᴛs ᴏғ ʏᴏᴜʀ ǫᴜᴇʀʏ </b>"
         
     try:
-        text = await update.message.edit(
+        await update.message.edit(
                 text,
                 reply_markup=reply_markup,
                 parse_mode="html"
         )
-        await asyncio.sleep(300)
-        await text.delete()
         
     except FloodWait as f: # Flood Wait Caused By Spamming Next/Back Buttons
         await asyncio.sleep(f.x)
