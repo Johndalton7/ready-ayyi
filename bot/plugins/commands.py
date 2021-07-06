@@ -111,7 +111,7 @@ async def start(bot, update):
 
     buttons = [[
         InlineKeyboardButton('⚠️ JOIN', url='https://t.me/MG_MEDIA'),
-        InlineKeyboardButton('🕵‍♂ CREATOR', url ='https://t.me/Wafikh')
+        InlineKeyboardButton('🕵‍♂ CREATOR', url ='https://t.me/xxxtentacion_OF_TG')
     ],[
         InlineKeyboardButton('💡 HELP', callback_data="help"),
         InlineKeyboardButton('🔐 CLOSE', callback_data="close")
