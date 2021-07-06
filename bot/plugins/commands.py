@@ -121,7 +121,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/8f2307b019539da61b3dc.jpg",
+        photo="https://telegra.ph/file/a32e7b94d05e632fa2bca.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
@@ -143,7 +143,7 @@ async def help(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/5ced61d0da061dd952566.jpg",
+        photo="https://telegra.ph/file/70a4aa512e7dbe1587293.jpg",
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
