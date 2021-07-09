@@ -157,7 +157,7 @@ async def auto_filter(bot, update):
          reply_to_message_id=update.message_id
         )
 
-        await asyncio.sleep(5)
+        await asyncio.sleep(10)
         await Send_message.delete()
     
 
@@ -179,13 +179,13 @@ async def auto_filter(bot, update):
         if len_result != 1:
             result[0].append(
                 [
-                    InlineKeyboardButton("ɴᴇxᴛ >>", callback_data=f"navigate(0|next|{query})")
+                    InlineKeyboardButton("𝙉𝙀𝙓𝙏 >>", callback_data=f"navigate(0|next|{query})")
                 ]
             )
         
         # Just A Decaration
         result[0].append([
-            InlineKeyboardButton(f"🗒 ᴘᴀɢᴇ 1/{len_result if len_result < max_pages else max_pages} ", callback_data="ignore")
+            InlineKeyboardButton(f"🗒 𝙋𝘼𝙂𝙀 1/{len_result if len_result < max_pages else max_pages} 🗒 ", callback_data="ignore")
         ])
         
         
