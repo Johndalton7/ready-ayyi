@@ -55,11 +55,11 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🎖ᏚᎻᎪᎡᎬ 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
+                    InlineKeyboardButton('🎖𝙎𝙃𝘼𝙍𝙀 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
                 ],
                 [
-                    InlineKeyboardButton('GRΟυP 💬', url='https://t.me/MGMOVIEGRAM'),
-                    InlineKeyboardButton('📣 ζHΔППΣL', url='https://t.me/MG_MEDIA')
+                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/MGMOVIEGRAM'),
+                    InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MG_MEDIA')
                 ]
             ]
         )
@@ -75,11 +75,11 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🎖ᏚᎻᎪᎡᎬ 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
+                    InlineKeyboardButton('🎖𝙎𝙃𝘼𝙍𝙀 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
                 ],
                 [
-                    InlineKeyboardButton('GRΟυP 💬', url='https://t.me/MGMOVIEGRAM'),
-                    InlineKeyboardButton('📣 ζHΔППΣL', url='https://t.me/MG_MEDIA')
+                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/MGMOVIEGRAM'),
+                    InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MG_MEDIA')
                 ]
             ]
         )
