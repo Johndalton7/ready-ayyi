@@ -52,7 +52,7 @@ async def cb_navg(bot, update: CallbackQuery):
         VERIFY[str(chat_id)] = admin_list
     
     if not ((user_id == ruser_id) or (user_id in admin_list)): # Checks if user is same as requested user or is admin
-        await update.answer("Nice Try ;)",show_alert=True)
+        await update.answer("𝙊𝙉𝙇𝙔 𝙍𝙀𝙌𝙐𝙀𝙎𝙏 𝙋𝙀𝙍𝙎𝙊𝙉 𝘾𝘼𝙉 𝘼𝘾𝘾𝙀𝙎𝙎",show_alert=True)
         return
 
 
@@ -89,13 +89,13 @@ async def cb_navg(bot, update: CallbackQuery):
 
     else:
         temp_results.append([
-            InlineKeyboardButton("<< ʙᴀᴄᴋ", callback_data=f"navigate({index_val}|back|{query})"),
-            InlineKeyboardButton("ɴᴇxᴛ >>", callback_data=f"navigate({index_val}|next|{query})")
+            InlineKeyboardButton("<< 𝘽𝘼𝘾𝙆", callback_data=f"navigate({index_val}|back|{query})"),
+            InlineKeyboardButton("𝙉𝙀𝙓𝙏 >>", callback_data=f"navigate({index_val}|next|{query})")
         ])
 
     if not int(index_val) == 0:    
         temp_results.append([
-            InlineKeyboardButton(f"🗒 ᴘᴀɢᴇ {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} ", callback_data="ignore")
+            InlineKeyboardButton(f"🗒 𝙋𝘼𝙂𝙀 {index_val + 1}/{len(results) if len(results) < max_pages else max_pages} 🗒 ", callback_data="ignore")
         ])
     
     if show_invite and int(index_val) !=0 :
