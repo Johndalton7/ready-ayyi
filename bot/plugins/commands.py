@@ -110,18 +110,18 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️ JOIN', url='https://t.me/MG_MEDIA'),
-        InlineKeyboardButton('🕵‍♂ CREATOR', url ='https://t.me/xxxtentacion_OF_TG')
+        InlineKeyboardButton('⚠️ 𝙅𝙊𝙄𝙉', url='https://t.me/MG_MEDIA'),
+        InlineKeyboardButton('🕵‍♂ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/xxxtentacion_OF_TG')
     ],[
-        InlineKeyboardButton('💡 HELP', callback_data="help"),
-        InlineKeyboardButton('🔐 CLOSE', callback_data="close")
+        InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
+        InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/a32e7b94d05e632fa2bca.jpg",
+        photo="https://telegra.ph/file/e543796c738d9e2f1f91f.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
@@ -133,17 +133,17 @@ async def start(bot, update):
 @Client.on_message(filters.command(["help"]) & filters.private, group=1)
 async def help(bot, update):
     buttons = [[
-        InlineKeyboardButton('ʜᴏᴍᴇ 🏘', callback_data='start'),
-        InlineKeyboardButton('ᴀʙᴏᴜᴛ 🕵‍♂', callback_data='about')
+        InlineKeyboardButton('𝙃𝙤𝙢𝙚 🏘', callback_data='start'),
+        InlineKeyboardButton('𝘼𝙗𝙤𝙪𝙩 🕵‍♂', callback_data='about')
     ],[
-        InlineKeyboardButton('ᴄʟᴏsᴇ 🔐', callback_data='close')
+        InlineKeyboardButton('𝘾𝙡𝙤𝙨𝙚 🔐', callback_data='close')
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/70a4aa512e7dbe1587293.jpg",
+        photo="https://telegra.ph/file/6d520d81f37e6e2dc394c.jpg",
         caption=Translation.HELP_TEXT,
         reply_markup=reply_markup,
         parse_mode="html",
@@ -155,8 +155,8 @@ async def help(bot, update):
 async def about(bot, update):
     
     buttons = [[
-        InlineKeyboardButton('ʜᴏᴍᴇ 🏘', callback_data='start'),
-        InlineKeyboardButton('ᴄʟᴏsᴇ 🔐', callback_data='close')
+        InlineKeyboardButton('𝙃𝙤𝙢𝙚 🏘', callback_data='start'),
+        InlineKeyboardButton('𝘾𝙡𝙤𝙨𝙚 🔐', callback_data='close')
     ]]
     reply_markup = InlineKeyboardMarkup(buttons)
     
