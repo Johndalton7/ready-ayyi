@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@MG_MEDIA"
+    update_channel = "@MFMOVIES3"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😁</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/MG_MEDIA")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/MFMOVIES3")]
               ])
             )
             return
@@ -49,17 +49,17 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = "<b>┈••✿ @MGMOVIEGRAM ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/joinchat/nppwyzxMr8NhN2M9\n\n➠Gʀᴏᴜᴘ : https://t.me/MGMOVIEGRAM</b>",
+                caption = "<b>┈••✿ @MFMOVIES3 ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/joinchat/nppwyzxMr8NhN2M9\n\n➠Gʀᴏᴜᴘ : https://t.me/MF_CHATGROUP</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🎖𝙎𝙃𝘼𝙍𝙀 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
+                    InlineKeyboardButton('🎖𝙎𝙃𝘼𝙍𝙀 🎖', url='https://t.me/share/url?url=https://t.me/MF_CHATGROUP')
                 ],
                 [
-                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/MGMOVIEGRAM'),
-                    InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MG_MEDIA')
+                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/MF_CHATGROUP'),
+                    InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MF_FILMM')
                 ]
             ]
         )
@@ -75,11 +75,11 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('🎖𝙎𝙃𝘼𝙍𝙀 🎖', url='https://t.me/share/url?url=https://t.me/MGMOVIEGRAM')
+                    InlineKeyboardButton('🎖𝙎𝙃𝘼𝙍𝙀 🎖', url='https://t.me/share/url?url=https://t.me/MF_CHATGROUP')
                 ],
                 [
-                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/MGMOVIEGRAM'),
-                    InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MG_MEDIA')
+                    InlineKeyboardButton('𝙂𝙍𝙊𝙐𝙋 💬', url='https://t.me/MF_CHATGROUP'),
+                    InlineKeyboardButton('📣 𝘾𝙃𝘼𝙉𝙉𝙀𝙇', url='https://t.me/MF_FILMM')
                 ]
             ]
         )
@@ -121,7 +121,7 @@ async def start(bot, update):
     
     await bot.send_photo(
         chat_id=update.chat.id,
-        photo="https://telegra.ph/file/21db53928e91f9c4f5c7d.jpg",
+        photo="https://telegra.ph/file/91103488ae5d9a9e96228.jpg",
         caption=Translation.START_TEXT.format(
                 update.from_user.mention),
         reply_markup=reply_markup,
