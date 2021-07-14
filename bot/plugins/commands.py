@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG & Wafikh
+# (c) @AlbertEinsteinTG & Johndalton_TG
 
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
@@ -49,7 +49,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = "<b>┈••✿ @MFMOVIES3 ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/joinchat/nppwyzxMr8NhN2M9\n\n➠Gʀᴏᴜᴘ : https://t.me/MF_CHATGROUP</b>",
+                caption = "<b>┈••✿ @MFMOVIES3 ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/MF_FILMM\n\n➠Gʀᴏᴜᴘ : https://t.me/MF_CHATGROUP</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -110,8 +110,8 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️ 𝙅𝙊𝙄𝙉', url='https://t.me/MG_MEDIA'),
-        InlineKeyboardButton('🕵‍♂ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/xxxtentacion_OF_TG')
+        InlineKeyboardButton('⚠️ 𝙅𝙊𝙄𝙉', url='https://t.me/MFMOVIES3'),
+        InlineKeyboardButton('🕵‍♂ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/Johndalton_TG')
     ],[
         InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
         InlineKeyboardButton('🔐 𝘾𝙇𝙊𝙎𝙀', callback_data="close")
