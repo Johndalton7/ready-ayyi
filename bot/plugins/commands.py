@@ -12,7 +12,7 @@ db = Database()
 
 @Client.on_message(filters.command(["start"]) & filters.private, group=1)
 async def start(bot, update):
-    update_channel = "@MFMOVIES3"
+    update_channel = "@MF_MOVIES1"
     if update_channel:
         try:
             user = await bot.get_chat_member(update_channel, update.chat.id)
@@ -24,7 +24,7 @@ async def start(bot, update):
             await update.reply_text(
                 text="<b>🔊 𝗝𝗼𝗶𝗻 𝗢𝘂𝗿 𝗠𝗮𝗶𝗻 𝗰𝗵𝗮𝗻𝗻𝗲𝗹 🤭\n\nനിങ്ങൾക് സിനിമകൾ വെന്നോ? അതിനായി അത്യം ങ്ങളുടെ മെയിൻ ചാനലിൽ ജോയിൻ ചെയ്യണം... 😁\n\nJoin ചെയതത്തിനു ശേഷം വീണ്ടും ബോട്ട് /start ആക്കൂ.😁</b>",
                 reply_markup=InlineKeyboardMarkup([
-                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/MFMOVIES3")]
+                    [ InlineKeyboardButton(text=" 🔰JOIN OUR CHANNEL🔰 ", url=f"https://t.me/MF_MOVIES1")]
               ])
             )
             return
@@ -49,7 +49,7 @@ async def start(bot, update):
             await bot.send_document(
                 chat_id=update.chat.id,
                 document = file_id,
-                caption = "<b>┈••✿ @MFMOVIES3 ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/MF_FILMM\n\n➠Gʀᴏᴜᴘ : https://t.me/MF_CHATGROUP</b>",
+                caption = "<b>┈••✿ @MF_MOVIES1 ✿••┈\n\n➠𝐂ʜᴀɴɴᴇʟ :https://t.me/MF_FILMM\n\n➠Gʀᴏᴜᴘ : https://t.me/MF_CHATGROUP</b>",
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
@@ -110,7 +110,7 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('⚠️ 𝙅𝙊𝙄𝙉', url='https://t.me/MFMOVIES3'),
+        InlineKeyboardButton('⚠️ 𝙅𝙊𝙄𝙉', url='https://t.me/MF_MOVIES1'),
         InlineKeyboardButton('🕵‍♂ 𝘾𝙍𝙀𝘼𝙏𝙊𝙍', url ='https://t.me/Johndalton_TG')
     ],[
         InlineKeyboardButton('💡 𝙃𝙀𝙇𝙋', callback_data="help"),
